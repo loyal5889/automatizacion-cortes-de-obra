@@ -8,7 +8,7 @@
 
 **Python · openpyxl · Decimal · Excel · JSON · unittest**
 
-[Probar la demo](#pruébalo-con-datos-ficticios) · [Ver un Excel de ejemplo](examples/CORTE_DEMO.xlsx) · [Decisiones técnicas](docs/ARQUITECTURA.md) · [Proyecto complementario: Curva S](https://github.com/loyal5889/dashboard-avance-programado-vs-real-curva-s)
+[Consultar DARCA II](#caso-real-darca-ii) · [Ver los cortes definitivos](examples/) · [Decisiones técnicas](docs/ARQUITECTURA.md) · [Proyecto complementario: Curva S](https://github.com/loyal5889/dashboard-avance-programado-vs-real-curva-s)
 
 ## El problema
 
@@ -27,21 +27,27 @@ El programa identifica actividades por WBS, consolida reportes y calcula únicam
 | Histórico JSON con firma | Detección de cambios en registros y reportes ya utilizados |
 | Borrador y confirmación separados | Revisar el Excel antes de registrar un corte |
 
-## Pruébalo con datos ficticios
+## Caso real: DARCA II
 
-Requiere **Python 3.11 o posterior**. El conjunto de ejemplo se construye desde cero; no contiene información de una obra real.
+Este repositorio presenta los archivos reales disponibles al **20 de octubre de 2026**:
+
+- [Cortes definitivos 1 y 2](examples/), con sus cantidades, valores y presupuesto.
+- [Presupuesto y reportes semanales](fuentes_darca/).
+- [Históricos confirmados](fuentes_darca/historico/).
+
+Los Excel se publican sin modificar respecto a los originales. El corte 2 abarca del 20 de septiembre al 20 de octubre de 2026. Las fechas propias de cada reporte determinan su inclusión; el nombre semanal de un archivo no significa que todo su periodo haya sido ejecutado.
+
+### Ejecutar una copia local
+
+Requiere Python 3.11 o posterior. Después de clonar el repositorio:
 
 ```bash
-git clone https://github.com/loyal5889/automatizacion-cortes-de-obra.git
-cd automatizacion-cortes-de-obra
 python -m pip install -r requirements.txt
-python scripts/crear_demo.py
-python generar_corte.py --numero 1 --inicio 2026-01-05 --fin 2026-01-17 --amortizacion 10 --retefuente 2 --garantia 10 --otros 0 --preliminar --confirmar-generacion
+python scripts/preparar_darca.py
+python generar_corte.py --manual
 ```
 
-El resultado se guarda en `output/`. En Windows también puedes usar `INICIAR_CORTE.bat` para el flujo interactivo. Para consultar instrucciones: `python generar_corte.py --manual`.
-
-El archivo [CORTE_DEMO.xlsx](examples/CORTE_DEMO.xlsx) muestra tres cortes ficticios. Por ejemplo, una actividad de 200 m² contratados tiene cantidades de **20, 40 y 30 m²**, para **90 m² acumulados**. Es un ejemplo técnico, no una cuenta de cobro.
+El preparador copia las fuentes reales a `data/` y los cortes definitivos a `output/`. Se detiene si esos destinos ya existen para evitar mezclar históricos. En Windows, `INICIAR_CORTE.bat` inicia el flujo interactivo. Los siguientes cortes deben usar el número y periodo que correspondan; generar un borrador no confirma un histórico.
 
 ## Flujo de información
 
@@ -77,6 +83,6 @@ La edición pública incluye pruebas con fuentes sintéticas para tres cortes co
 - La regla de desglose de lavado incluida está acotada a tres tramos de 64 m²; no representa una conversión general automática para cualquier contrato.
 - La retefuente se calcula como `(bruto − IVA sobre utilidad) × porcentaje`; es una regla del flujo implementado, no asesoría tributaria.
 - El histórico exige confirmación explícita. Los borradores no se consideran cortes registrados.
-- La edición pública omite presupuestos, fuentes e históricos originales. Los datos de muestra son ficticios.
+- La edición pública incluye archivos reales de DARCA II. Las fuentes sintéticas se conservan únicamente como apoyo de las pruebas automatizadas.
 
 **Autor:** [loyal5889](https://github.com/loyal5889) · [Explorar el dashboard de avance](https://github.com/loyal5889/dashboard-avance-programado-vs-real-curva-s)

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-r"""CORTES DE OBRA — DEMOSTRACIÓN PÚBLICA
+r"""CORTES DE OBRA — CASO REAL DARCA II
 
 1. Instale Python 3.11+ y las dependencias: python -m pip install -r requirements.txt
-2. Prepare datos ficticios: python scripts/crear_demo.py
+2. En una copia nueva, prepare DARCA II: python scripts/preparar_darca.py
 3. Ejecute python generar_corte.py o INICIAR_CORTE.bat en Windows.
-4. Para la demo: inicio 05/01/2026, fin 17/01/2026, corte 1.
+4. Ya hay dos cortes confirmados. Use el siguiente número y el periodo correspondiente.
 5. Ingrese porcentajes como 10 para 10%. Revise antes de registrar definitivamente.
 6. El Excel aparece en output/. El histórico confirmado aparece en data/historico/.
 
-El conjunto de demostración no contiene datos de clientes. Consulte README.md
+Se incluyen archivos reales de DARCA II. Consulte README.md
 para arquitectura, controles, alcance, ejemplos y limitaciones.
 """
 import argparse

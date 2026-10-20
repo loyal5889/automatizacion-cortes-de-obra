@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "proyecto": "Darca II",
+  "numero": 2,
+  "fecha": "2026-10-20T13:35:15.586300-05:00",
+  "inicio": "2026-09-20",
+  "fin": "2026-10-20",
+  "cantidades_acumuladas": {
+    "1": "3744.000000",
+    "2": "500.000000",
+    "3": "1800.000000",
+    "4": "3744.000000",
+    "5": "3744.000000",
+    "6": "3744.000000",
+    "7": "0.000000",
+    "8": "720.000000",
+    "9": "499.200000",
+    "10": "0.000000",
+    "11": "96.000000",
+    "12": "0.000000",
+    "13": "133.000000",
+    "14": "20.000000"
+  },
+  "bruto": "75970664.19632149710592130000",
+  "neto": "59269151.77567124384470292000",
+  "deducciones": {
+    "amortizacion": "7597066.419632149710592130000",
+    "retefuente": "1507379.581385953840034120000",
+    "garantia": "7597066.419632149710592130000",
+    "otros": "0"
+  },
+  "parametros": {
+    "numero": 2,
+    "inicio": "2026-09-20",
+    "fin": "2026-10-20",
+    "amortizacion": "0.1",
+    "retefuente": "0.02",
+    "garantia": "0.1",
+    "otros": "0"
+  },
+  "bases_deducciones": {
+    "amortizacion": "bruto",
+    "retefuente": "bruto_menos_iva",
+    "garantia": "bruto"
+  },
+  "reportes": [
+    {
+      "archivo": "Avance_Real_DARCA2_24Ago-29Ago.xlsx",
+      "huella": "ddeca9817f197da58e3dce85bb4c54ea8a4cb8ade6cd0f8df156393d3a734b88",
+      "sha256": "74514a2ad713eb1bd8e251ec4b72adbf8ba07cb70514630504d2887cf4172917",
+      "fecha": "2026-08-29"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_31Ago-05Sep.xlsx",
+      "huella": "b2cef6ff36140b498b067a807ae83c5897398049409085de806767f47987a629",
+      "sha256": "ea6f274c35a0a36d92a5909faceb7e4fdd45ccbb674fb7f4cea17da0c9f9c063",
+      "fecha": "2026-09-05"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_7Sep-12Sep.xlsx",
+      "huella": "a403c104a595931da27688dfe11fb55a4c18c089822df99e22c3809ed1e812ed",
+      "sha256": "304d8647a68d8ce79a5aaeb6ff708f5d3fd13a39f70c9a440edf03505406831d",
+      "fecha": "2026-09-12"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_14Sep-19Sep.xlsx",
+      "huella": "567e38e9e493d23513dfc8d8fb8ffc0ed892ead7aa280213b2e5d9b11bbb5a9d",
+      "sha256": "222b5f8cbe7985167848a302045d20baf822f0e1722422762ba0e73b1f7de4a0",
+      "fecha": "2026-09-19"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_21Sep-26Sep.xlsx",
+      "huella": "d9f5e39335ae4ef8a145f818fa7922086e3440984aac9b31c2e9be80bf79d07f",
+      "sha256": "f32e382958d969b2fe6429a08d0dd52331ed2e98912142c9f9fbaec02d60afc1",
+      "fecha": "2026-09-26"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_28Sep-3Oct.xlsx",
+      "huella": "5597ac907f7339ee87a6b4be8c4e53c5e03b753b1940dc8819c115758cc5425c",
+      "sha256": "842e5e598d5011c546b4337ab5040d3154753566431a5ce826c1512a3a8c4317",
+      "fecha": "2026-10-03"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_5Oct-10Oct.xlsx",
+      "huella": "671a0476791e2d93309f3dbf8edb2708a76a9cd9ebd6bbdf7e4ac5b69999f358",
+      "sha256": "bf4976f74ba4097ec68cad42286639886c61e9b0a42fe64840f280a06632062e",
+      "fecha": "2026-10-10"
+    },
+    {
+      "archivo": "Avance_Real_DARCA2_13Oct-17Oct.xlsx",
+      "huella": "6fc4f80eb5c4c9f983eb02a8a3b4cb17dd7c1299c7c643b10824efbf69d8065e",
+      "sha256": "1121b9a191577b4d5671a5e7366d9b167e789a28de2cf206f23662c298210272",
+      "fecha": "2026-10-17"
+    }
+  ],
+  "contexto": "85cffffe49bc22efbaffac0a68724a4935ed8426a2f62f436a109c7cedb2e038",
+  "excel": "output/CORTE_02_DARCA_II_DEFINITIVO_20261020_133515.xlsx",
+  "excel_sha256": "551b76036304dbb051303960982f8b450c55551323d148f5debba4f3729da9ba",
+  "integridad": "7ba800d5b7982dacbea56fb6a5f5aa96c9c97fd95970d8f3ba314a411f3f2d22"
+}

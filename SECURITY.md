@@ -1,3 +1,3 @@
-# Datos y uso seguro
+# Publicación de datos
 
-La edición pública contiene código y definiciones; no incluye fuentes de clientes, presupuestos, históricos, MPP, PBIX ni cachés. Los ejemplos son sintéticos. No agregue credenciales ni datos de obras reales en issues o pull requests.
+Este portafolio incluye archivos reales de DARCA II publicados por solicitud de su propietario el 20 de octubre de 2026. Los archivos incluidos son públicos. No agregue contraseñas, tokens ni credenciales. Los respaldos de trabajo se conservan por separado.

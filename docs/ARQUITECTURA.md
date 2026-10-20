@@ -17,4 +17,4 @@
 
 **Confirmación.** Generar un archivo es distinto de registrar una cuenta. La escritura definitiva verifica que el histórico y las fuentes no hayan cambiado desde el cálculo.
 
-**Portabilidad.** Se publica el motor y un generador de fuentes sintéticas. Los ensayos privados sobre datos originales se mantienen fuera de este repositorio.
+**Portabilidad.** Se publica el motor y un conjunto real de DARCA II en `fuentes_darca/`. `scripts/preparar_darca.py` prepara una copia local. Las pruebas usan datos sintéticos aislados para evitar alterar los históricos reales.
