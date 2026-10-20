@@ -1,0 +1,14 @@
+{
+  "proyecto": "Proyecto demostrativo",
+  "codigo": "DEMO",
+  "hoja_presupuesto": "Ppto Ajustado",
+  "hoja_reportes": "DATOS",
+  "items_esperados": 14,
+  "decimales_cantidad": 6,
+  "tolerancia_monetaria": "0.02",
+  "bases_deducciones": {
+    "amortizacion": "bruto",
+    "retefuente": "bruto",
+    "garantia": "bruto"
+  }
+}
